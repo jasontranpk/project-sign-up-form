@@ -1,0 +1,10 @@
+.container-left{
+    background-color: green;
+}
+.container-right{
+    background-color: red;
+}
+.container{
+    display: flex;
+    width: 800px;
+}
