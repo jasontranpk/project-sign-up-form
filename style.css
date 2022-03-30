@@ -1,10 +1,133 @@
+@font-face {
+    font-family: NorseBold;
+    src: url(assets/fonts/Norse-Bold.otf);
+  }
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .container-left{
-    background-color: green;
+    background-image: url(assets/img/ferns.jpg);
+    flex-grow: 1;
+    background-position: center; 
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 370px;
+    
 }
 .container-right{
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: space-between;
+    flex-grow: 1;
+
+
 }
 .container{
     display: flex;
-    width: 800px;
+    justify-content: space-between;
+    gap: 0;
+    height: 100vh;
+}
+.logo{
+    height: 150px;
+
+}
+.logo-container{
+    margin-top: 300px;
+    height: auto;
+    background: rgba(19, 19, 19, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    color: white;
+    font-family: 'NorseBold', sans-serif !important;
+
+}
+.footer{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.footer a{
+    color: white;
+}
+
+.top{
+    text-align: justify;
+    padding-top: 200px;
+    font-size: 1.5rem;
+    background-color:rgb(213, 213, 213, 0.1);
+    padding-left: 20px;
+    padding-right: 70px;
+    padding-bottom: 30px;
+    flex-grow: 1;
+}
+.form-input{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.75rem;
+    margin-right: 50px;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+.form-input input{
+    border: solid #E5E7EB 1px;
+    border-radius: 5px;
+    padding: 15px auto;
+}
+
+.input-container{
+    flex: 40%;
+    margin-top: 15px;
+}
+.middle{
+    padding-top: 10px;
+    padding-left: 20px;
+
+}
+.bot{
+    padding-left: 20px;
+    background-color:rgba(121, 119, 119, 0.1);
+    flex:1 1 auto;
+    min-height: 300px;
+    flex-grow: 3;
+    padding-top: 30px;
+}
+.smbutton{
+    width: 200px;
+    padding: 20px 50px;
+    background-color: #596D48;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.smbutton:hover{
+    filter:brightness(150%);
+}
+.form-input input:focus{
+    border: solid blue 1px !important;
+    box-shadow: 2px;
+}
+input:focus{
+    outline: none;
+}
+.inp-pass:invalid{
+    border: solid red 1px !important;
+}
+.bot a{
+    color: #596D48;
 }

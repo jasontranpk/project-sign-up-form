@@ -10,8 +10,57 @@
 </head>
 <body>
     <div class="container">
-        <div class="container-left">left</div>
-        <div class="container-right">rigt</div>
+        <div class="container-left">
+            <div class="logo-container">
+                <img src="assets/img/odin-lined.png" alt="" class="logo">
+                <p>ODIN</p>
+                
+            </div>
+            <div class="footer">
+                Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+            </div>
+        </div>
+        <div class="container-right">
+            <div class="top">
+                <strong>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.
+                <br> <br>
+                You <i>know</i> you want to.
+                </strong>
+                
+            </div>
+
+                <div class="middle">
+                    <form action="#" method="post" name="suform" id="suform">
+                        <h4>Let's do this!</h4>
+                        <div class="form-input">
+                            <p class="input-container"><label for="fname">FIRST NAME</label>
+                            <br><input type="text" name="fname" size="30" required>
+                            </p>
+                            <p class="input-container"><label for="fname">LAST NAME</label>
+                            <br><input type="text" name="fname"size="30">
+                            </p>
+                            <p class="input-container"><label for="fname">EMAIL NAME</label>
+                            <br><input type="email" name="email"size="30">
+                            </p>
+                            <p class="input-container"><label for="fname">PHONE NUMBER</label>
+                            <br><input type="text" name="fname"size="30">
+                            </p>
+                            <p class="input-container"><label for="password">PASSWORD</label>
+                            <br><input type="password" name="password"size="30" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$" class="inp-pass" required >
+                            </p>
+                            <p class="input-container"><label for="fname">PASSWORD</label>
+                            <br><input type="text" name="fname"size="30">
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <div class="bot">
+                    <button type="submit" form="suform" value="Create account" class="smbutton">Create account</button>
+                    <p>Already have an account? <a href="">Login</a></p>
+                </div>
+
+        </div>
     </div>
 
 </body>
